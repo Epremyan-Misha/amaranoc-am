@@ -158,10 +158,6 @@ function Body() {
               <HouseCards title="Ծաղկաձոր" people="40" prace="150,000Դ" image="housesPhoto/caxkadzor3.png" />
             </div>
              <img className="pagesImg" src="photo/pages.png"/>
-             <div className="footerMain">
-              <img className="footerImg1" src="photo/footer1.png" />
-              <img className="footerImg2" src="photo/footer2.png" />
-              </div>
          </div>
         <div className="divForOptions">
           <div className="aranjnatner">

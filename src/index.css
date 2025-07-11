@@ -21,6 +21,7 @@ code {
   display: flex;
   gap: 70px;
   margin-top: -140px;
+  width: 120%;
 }
 .peopleIcon,.globusIcon{
   cursor: pointer;
@@ -369,6 +370,10 @@ code {
 .housePrace{
   font-size: x-large;
   color: rgb(156, 155, 155);
+  transition: 0.5s;
+}
+.housePrace:hover{
+  color: rgb(44, 44, 44);
 }
 .divForHousesMain{
   cursor: pointer;
@@ -378,11 +383,20 @@ code {
   box-shadow: 2px 2px 4px black;
   height: 390px;
   width: 310px;
+  transition: 0.5s;
+}
+.divForHousesMain:hover{
+  width: 312px;
+  height: 395px;
 }
 .productHousesImg{
   margin-left: -5px;
   border-radius: 5px;
   width: 310px;
+  transition: 0.5s;
+}
+.productHousesImg:hover{
+  width: 320px;
 }
 .iconPeople{
   height: 25px;
@@ -395,14 +409,55 @@ code {
 .pagesImg{
   cursor: pointer;
   margin-top: 150px;
-  margin-left: 350px;
-  
+  margin-left: 310px; 
 }
-.footerMain{
-  display: grid;
-  margin-left: -355px;
+.footerMain {
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 300px;
 }
-.footerImg1,.footerImg2{
-  width: 101.5%;
-  margin-left:-10px;
+.footerForReport {
+  width: 80%;
+  height: 400px;
+  background-color: rgb(61, 61, 61);
+  border-radius: 25px;
+  margin-left: 50px;
+}
+.h1ForFooter{
+  color: white;
+  margin-left: 250px;
+  margin-top: 50px;
+}
+.pForFooter{
+  color: white;
+  margin-left: 290px;
+  margin-top: 70px;
+}
+.divForFooterInputs{
+  margin-top: 100px;
+  display: flex;
+  gap: 75px;
+  margin-left: 60px;
+}
+.inputForReport1,.inputForReport2,.inputForReport3{
+  height: 50px;
+  width: 250px;
+  border-radius: 15px;
+  border: solid 1px white;
+  background-color: rgb(61, 61, 61);
+  color: white;
+}
+.footerBtn{
+  color: white;
+  background-color: rgb(231, 109, 21);
+  border-radius: 15px;
+  width: 150px;
+  margin-left: -15px;
+  cursor: pointer;
+  transition: 2s;
 }
