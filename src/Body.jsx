@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./index.css";
 import ProductCard from "./ProductCards";
-import HouseCards from "./HousesCards";
+import homeImages from "./DataBase";
 function Body() {
   const [count, setCount] = useState(1);
 
@@ -130,35 +130,24 @@ function Body() {
                 <p>Թոնիր</p>
             </div>
           </div>
+                  <img className="pagesImg" src="photo/pages.png"/>
+
         </div>
-         <div className="aranjnatnerMain">
-            <div className="aranjnatner1">
-                <HouseCards title="Ծաղկաձոր" people="15" prace="80,000Դ" image="housesPhoto/caxkadzor.png" />
-                <HouseCards title="Օհանավան" people="25" prace="90,000Դ" image="housesPhoto/ohanavan.png" />
-                <HouseCards title="Երևան" people="12" prace="140,000Դ" image="housesPhoto/erevan.png" />
-            </div>
-            <div className="aranjnatner2">
-                <HouseCards title="Ծաղկաձոր" people="15" prace="140,000Դ" image="housesPhoto/caxkadzor1.png" />
-                <HouseCards title="Արզնի" people="50" prace="200,000Դ" image="housesPhoto/arzni.png" />
-                <HouseCards title="Օհանավան" people="40" prace="80,000Դ" image="housesPhoto/ohanavan1.png" />
-            </div>
-            <div className="aranjnatner3">
-                <HouseCards title="Հրազդան" people="24" prace="150,000Դ" image="housesPhoto/hrazdan.png" />
-                <HouseCards title="Օհանավան" people="30" prace="100,000Դ" image="housesPhoto/ohanavan2.png" />
-                <HouseCards title="Ծաղկաձոր" people="30" prace="100,000Դ" image="housesPhoto/caxkadzor2.png" />
-            </div>
-            <div className="aranjnatner4">
-              <HouseCards title="Գառնի" people="40" prace="150,000Դ" image="housesPhoto/garni.png" />
-              <HouseCards title="Մրգաշեն" people="20" prace="120,000Դ" image="housesPhoto/mrgashen.png" />
-              <HouseCards title="Դրախտիկ" people="15" prace="100,000Դ" image="housesPhoto/draxtik.png" />
-            </div>
-            <div className="aranjnatner5">
-              <HouseCards title="Դիլիջան" people="10" prace="70,000Դ" image="housesPhoto/dilijan.png" />
-              <HouseCards title="Հրազդան" people="30" prace="120,000Դ" image="housesPhoto/hrazdan1.png" />
-              <HouseCards title="Ծաղկաձոր" people="40" prace="150,000Դ" image="housesPhoto/caxkadzor3.png" />
-            </div>
-             <img className="pagesImg" src="photo/pages.png"/>
-         </div>
+        <div className="aranjnatnerMain">
+  {homeImages.map((img) => (
+    <div className="houseMainDiv">
+      <div className="divForHousesMain">
+        <img className="productHousesImg" src={img.image} alt={img.title} />
+        <div className="titleAndPeople">
+          <p className="houseTitle">{img.title}</p>
+          <img className="iconPeople" src="photo/iconPeople.png" />
+          <p className="housePeople">{img.people}</p>
+        </div>
+        <p className="housePrace">{img.prace}</p>
+      </div>
+    </div>
+  ))}
+</div>
         <div className="divForOptions">
           <div className="aranjnatner">
             <img style={{ marginLeft: "25px" }} src="photo/nkar 1.png" />

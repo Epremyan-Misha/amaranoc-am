@@ -252,7 +252,7 @@ code {
   border-radius: 25px;
   transition: 1s;
 }
-.p1:hover,.p2:hover,.p3:hover,.p4:hover,.p5:hover{
+.p1:hover,.p2:hover,.p3:hover,.p4:hover,.p5:hover,.bathroom3:hover{
   background-color: gainsboro;
 }
 .peopleRoom345{
@@ -375,15 +375,30 @@ code {
 .housePrace:hover{
   color: rgb(44, 44, 44);
 }
-.divForHousesMain{
+.aranjnatnerMain {
+  margin-top: 150px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding: 30px;
+}
+
+.houseMainDiv {
+  height: auto;
+}
+
+.divForHousesMain {
   cursor: pointer;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   border-radius: 25px;
   padding: 10px;
-  margin-left: 45px;
   box-shadow: 2px 2px 4px black;
-  height: 390px;
-  width: 310px;
   transition: 0.5s;
+  width: 100%;
+  max-width: 310px;
 }
 .divForHousesMain:hover{
   width: 312px;
@@ -408,8 +423,8 @@ code {
 }
 .pagesImg{
   cursor: pointer;
-  margin-top: 150px;
-  margin-left: 310px; 
+  margin-top: 1100px;
+  margin-left: 600px; 
 }
 .footerMain {
   height: 500px;
@@ -461,3 +476,46 @@ code {
   cursor: pointer;
   transition: 2s;
 }
+@media (max-width: 768px) {
+  .mainDiv, .div {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .divForInfo, .divForOptions {
+    width: 90vw;
+  }
+
+  .divForHousesMain, .productHousesImg {
+    max-width: 90vw;
+  }
+
+  .aranjnatnerMain {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .footerForReport {
+    width: 90%;
+    margin-left: 0;
+  }
+
+  .h1ForFooter, .pForFooter {
+    margin-left: 10%;
+    text-align: center;
+  }
+
+  .divForFooterInputs {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .pagesImg{
+    display: none;
+  }
+  .headDiv{
+    width: 50%;
+  }
+}
+
