@@ -480,7 +480,7 @@ code {
   .mainDiv, .div {
     flex-direction: column;
     align-items: center;
-    margin-left: 0;
+    margin-left: -35px;
   }
 
   .divForInfo, .divForOptions {
@@ -497,8 +497,10 @@ code {
   }
 
   .footerForReport {
-    width: 90%;
+    margin-top: -35px;
+    width: 95%;
     margin-left: 0;
+    height: 550px;
   }
 
   .h1ForFooter, .pForFooter {
@@ -511,11 +513,28 @@ code {
     gap: 20px;
     align-items: center;
   }
-  .pagesImg{
+  .pagesImg,.divForMap{
     display: none;
   }
-  .headDiv{
-    width: 50%;
+ 
+  .footerMain{
+    height: 600px;
+  }
+  .divForOptions{
+    display: none;
+  }
+  .footerBtn{
+    padding: 15px;
+    margin-top: -15px;
+  }
+  .divForFooterInputs{
+    margin-top: -5px;
+  }
+  .forYellowBorder,.text1,.text2,.text3,.globusIcon,.peopleIcon{
+    display: none;
+  }
+  .input{
+    margin-left: -45px;
   }
 }
 

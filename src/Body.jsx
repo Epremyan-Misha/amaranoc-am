@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import "./index.css";
 import ProductCard from "./ProductCards";
 import homeImages from "./DataBase";
 function Body() {
   const [count, setCount] = useState(1);
-
+  const [countWithNight, setCountWithNight] = useState(1);
+  const [delivery,setDelivery] = useState(false)
   const handleIncrement = () => {
     setCount(count + 1);
   };
@@ -14,7 +15,21 @@ function Body() {
       setCount(count - 1);
     }
   };
-
+  const handleIncrementForNight= ()=>{
+    setCountWithNight(countWithNight+1)
+  }
+  const handleDecrementForNight = ()=>{
+    if (countWithNight > 1) {
+      setCountWithNight(countWithNight - 1)
+    }
+  }
+ useEffect(() => {
+  if (countWithNight >= 10) {
+    setDelivery(true);
+  } else {
+    setDelivery(false);
+  }
+}, [countWithNight]);
   return (
     <>
       <div className="div">
@@ -75,11 +90,15 @@ function Body() {
             </div>
           </div>
           <div className="countPeopleNightMain">
-            <h4 className="nightPeopleH4">Մարդկանց թույլատրելի քանակը գիշերակացով</h4>
+            <h4 className="nightPeopleH4">Մարդկանց թույլատրելի քանակը գիշերակացով
+               {delivery && (
+              <p>Առավելագույն քանակ</p>
+            )}
+            </h4>
             <div className="countPeopleNight">
-                <button className="minusPeopleBtn"onClick={handleDecrement}>-</button>
-                <p className="countPeople">{count}</p>
-                <button className="plusPeopleBtn"  onClick={handleIncrement}>+</button>
+                <button className="minusPeopleBtn"onClick={handleDecrementForNight}>-</button>
+                <p className="countPeople">{countWithNight}</p>
+                <button className="plusPeopleBtn"  onClick={handleIncrementForNight}>+</button>
             </div>
           </div>
           <div className="peopleRoomMain">
@@ -131,7 +150,6 @@ function Body() {
             </div>
           </div>
                   <img className="pagesImg" src="photo/pages.png"/>
-
         </div>
         <div className="aranjnatnerMain">
   {homeImages.map((img) => (
