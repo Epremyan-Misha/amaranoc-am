@@ -23,7 +23,7 @@ code {
   margin-top: -140px;
   width: 120%;
 }
-.peopleIcon,.globusIcon{
+.globusIcon{
   cursor: pointer;
   width: 30px;
   height: 30px;
@@ -42,10 +42,10 @@ code {
   border-bottom: solid 1.5px rgb(255, 123, 0);
   height: 30px;
 }
-.text1,.text2,.text3{
+.text1{
   cursor: pointer;
 }
-.text1:hover,.text2:hover,.text3:hover{
+.text1:hover{
   cursor: pointer;
   border-bottom: solid 1.5px rgb(255, 123, 0);
   height: 30px;
@@ -113,11 +113,7 @@ code {
   margin-left: 5px;
   padding: 10px;
 }
-.dram{
-  background-color: black;
-  color: white;
-}
-.dram,.dollar,.euro,.rubli{
+.euro{
   cursor: pointer;
   width: 50px;
   height: 25px;
@@ -130,7 +126,7 @@ code {
   margin-top: 20px;
   transition: 1s;
 }
-.dollar:hover,.euro:hover,.rubli:hover{
+.euro:hover{
   background-color: gainsboro;
 }
 .divForInputs{
