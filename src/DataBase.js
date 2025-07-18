@@ -171,4 +171,144 @@ export const courses = [
     title: "₽",
   },
 ];
+export const firstPeopleRooms = [
+  {
+    num: "1",
+  },
+  {
+    num: "2",
+  },
+  {
+    num: "3",
+  },
+];
+export const secondPeopleRooms = [
+  {
+    num: "4",
+  },
+  {
+    num: "5",
+  },
+];
+export const lastPeopleRooms = [
+  {
+    num: "6 և ավելի",
+  },
+];
+export const h4PeopleRooms = [
+  {
+    h4: "Սենյակների քանակ",
+  },
+];
+export const firstBathroom = [
+  {
+    num: "1",
+  },
+  {
+    num: "2",
+  },
+];
+export const lastBathroom = [
+  {
+    num: "3+",
+  },
+];
+export const h4Bathroom = [
+  {
+    h4: "Սանահանգույցների քանակ",
+  },
+];
+export const h4ForPool = [
+  {
+    h4: "Լողավազան",
+  },
+];
+export const firstTextPool = [
+  {
+    text: "Բոլորը",
+  },
+  {
+    text: "Բաց",
+  },
+];
+export const secondTextPool = [
+  {
+    text: "Փակ",
+  },
+  {
+    text: "Տաքացվող",
+  },
+];
+export const lastTextPool = [
+  {
+    text: "Առանց լողավազան",
+  },
+];
+export const advanatagesH4 = [
+  {
+    h4: "Առավելություններ",
+  },
+];
+export const advanatagesText = [
+  {
+    text: "Շոգեբաղնիք",
+  },
+  {
+    text: "Ջակուզի",
+  },
+  {
+    text: "Բիլիարդ",
+  },
+  {
+    text: "Սեղանի թենիս",
+  },
+  {
+    text: "Բացօթյա տաղավար",
+  },
+  {
+    text: "Փակ տաղավար",
+  },
+  {
+    text: "Մանղալ",
+  },
+  {
+    text: "Թոնիր",
+  },
+];
+export const productsImg = [
+  {
+    title: "Frame houses",
+    image: "photo/nkar 2.png",
+  },
+  {
+    title: "Տնակներ",
+    image: "photo/nkar 3.png",
+  },
+  {
+    title: "Փակ լողավազան",
+    image: "photo/nkar 4.png",
+  },
+  {
+    title: "Աղմուկից հեռու",
+    image: "photo/nkar 5.png",
+  },
+  {
+    title: "Շքեղ տեսարան",
+    image: "photo/nkar 6.png",
+  },
+];
+export const inputsForFotter = [
+  {
+    type: "text",
+    placeHolder: "Անուն Ազգանուն",
+  },
+  {
+    type: "text",
+    placeHolder: "Հեռախոսահամար",
+  },
+  {
+    type: "text",
+    placeHolder: "Էլ․ հասցե",
+  },
+];
 export default homeImages;
