@@ -1,16 +1,13 @@
 import "../index.css";
+import Inputs from "./ComponentForInputsFooter";
+import { InfoH1Footer,InfoPFooter } from "./InfoForFooter";
 function Footer(){
     return(
         <div className="footerMain"  style={{ backgroundImage: "url('/photo/footer1.png')" }}>
             <div className="footerForReport">
-                <h1 className="h1ForFooter">-------- Տեղադրել Հայտարարություն --------</h1>
-                <p className="pForFooter">Մուտքագրեք Ձեր տվյալները նշված դաշտերում և մենք կկապնվենք Ձեզ հետ</p>
-                <div className="divForFooterInputs">
-                    <input className="inputForReport1" type="text" placeholder="Անուն Ազգանուն" />     
-                    <input className="inputForReport2"  type="text" placeholder="Հեռախոսահամար" />                           
-                    <input className="inputForReport3"  type="text" placeholder="Էլ․ հասցե" />
-                    <button className="footerBtn">Ուղարկել</button>
-                </div>
+               <InfoH1Footer />
+               <InfoPFooter />
+                <Inputs />
             </div>
         </div>
     )
